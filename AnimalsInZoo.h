@@ -1,15 +1,20 @@
+#include "Animal.h"
+
+#include <iostream>
+#include <stdlib.h>
+using namespace std; 
+
 class AnimalsInZoo{
 
 	public: 
-		AnimalsInZoo(unsigned int numAnimals, Animal animal);
-	
-		AnimalsInZoo() : numAnimals(1), animal(){};
+		AnimalsInZoo(Animal a);
+	 	
+		AnimalsInZoo();
 
 		void display();
 
 	private: 
-		unsigned int numAnimals = 1 
-		Animal animal();
+		unsigned int numAnimals = 0; 
+		Animal animal; 
 
-
-}
+};

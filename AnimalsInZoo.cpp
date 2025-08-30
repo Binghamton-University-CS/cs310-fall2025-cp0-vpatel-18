@@ -1,18 +1,22 @@
 #include "AnimalsInZoo.h"
 
-#include <iostream>
-#include <stdlib.h>
-using namespace std; 
 
-	AnimalsInZoo::Animals(unsigned int animalNum, Animal species){
-		numAnimals = 1;
-		animal = species
-	}; 
+AnimalsInZoo::AnimalsInZoo(Animal a){
+	numAnimals = 1; 
+	animal = a; 
+}
 
-	AnimalInZoo::AnimalsInZoo() : numAnimals, animal(){};
+AnimalsInZoo::AnimalsInZoo() : numAnimals(0) {}; 
 
-	void AnimalInZoo::display(){
-	
+void AnimalsInZoo::display(){
 
-	
+	if(numAnimals == 1){
+		cout << numAnimals << " ";
+		animal.display();
 	}
+	else{
+		cout << numAnimals << endl;
+	}
+
+}
+

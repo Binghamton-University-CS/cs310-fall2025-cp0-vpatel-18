@@ -1,4 +1,6 @@
-#include "Animal.h"
+
+#include "AnimalsInZoo.h"
+
 
 #include <iostream>
 #include <stdlib.h>
@@ -17,5 +19,16 @@ int main() {
    animal1->display();
    animal3.display();
 
+   printf("\n");
+
    delete animal1;
+
+  
+   AnimalsInZoo *newZoo = new AnimalsInZoo(animal2);
+   AnimalsInZoo zoo2;
+
+
+   newZoo->display();
+   zoo2.display();
+
 }

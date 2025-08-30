@@ -1,12 +1,16 @@
+#include <iostream>
+#include <stdlib.h>
+using namespace std;
+
 class Animal {
    public:
       Animal(string speciesName, unsigned int discoveryYear);
 
-      Animal() : species(""), year_discovered(0) {};
+      Animal();
 
       void display();
 
-private:
+   private:
       string species = "";
       unsigned int year_discovered = 0;
 };
